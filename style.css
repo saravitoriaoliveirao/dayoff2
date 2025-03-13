@@ -21,15 +21,15 @@ header {
     align-items: center;
 }
 
-img{
+img {
     height: 150px;
 }
 
-.chope{
+.chope {
     height: 100px;
 }
 
-.espeto{
+.espeto {
     height: 100px;
 }
 
@@ -109,7 +109,41 @@ nav ul li a {
     color: red;
 }
 
-.modo-claro { 
+.modo-escuro {
+    background-color: #111;
+    color: white;
+}
+
+.modo-escuro header {
+    background-color: #222;
+}
+
+.modo-escuro .cta-btn {
+    background-color: red;
+    color: white;
+}
+
+/* Estilos para Modo Claro */
+.modo-claro {
+    background-color: white;
+    color: black;
+}
+
+.modo-claro header {
+    background-color: #f5f5f5;
+}
+
+.modo-claro .cta-btn {
+    background-color: black;
+    color: white;
+}
+
+.modo-claro nav {
+    color: #000000;
+}
+
+modo-claro section {
+    background-color: whitesmoke;
 }
 
 /* Promoções */
@@ -145,7 +179,8 @@ nav ul li a {
     margin: 10px 0 5px;
 }
 
-.contato input, .contato textarea {
+.contato input,
+.contato textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -162,11 +197,11 @@ nav ul li a {
     cursor: pointer;
 }
 
-.endereco{
+.endereco {
     width: 600px;
     height: 550px;
     margin: auto;
-    padding:100px;
+    padding: 100px;
 }
 
 footer {
