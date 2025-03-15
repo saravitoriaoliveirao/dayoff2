@@ -1,0 +1,220 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grupo{
+    margin: 50px;
+}
+
+/* Corpo e cores principais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #222;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    height: 150px;
+}
+
+.chope {
+    height: 100px;
+}
+
+.espeto {
+    height: 100px;
+}
+
+header .logo h1 {
+    color: red;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Seção Hero */
+.hero {
+    background: url('imagem-chope.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    color: red;
+}
+
+.hero-text p {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.cta-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Cardápio */
+.cardapio {
+    padding: 50px 20px;
+    margin: 100px;
+    background-color: #333;
+    text-align: center;
+}
+
+.cardapio h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.cardapio .item {
+    display: inline-block;
+    width: 45%;
+    margin: 20px;
+    text-align: center;
+}
+
+.cardapio .item img {
+    width: auto;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.cardapio .item h3 {
+    margin-top: 10px;
+    color: red;
+}
+
+.modo-escuro {
+    background-color: #111;
+    color: white;
+}
+
+.modo-escuro header {
+    background-color: #222;
+}
+
+.modo-escuro .cta-btn {
+    background-color: red;
+    color: white;
+}
+
+/* Estilos para Modo Claro */
+.modo-claro {
+    background-color: white;
+    color: black;
+}
+
+.modo-claro header {
+    background-color: #f5f5f5;
+}
+
+.modo-claro .cta-btn {
+    background-color: black;
+    color: white;
+}
+
+.modo-claro nav {
+    color: #000000;
+}
+
+modo-claro section {
+    background-color: whitesmoke;
+}
+.modo-claro .lista{
+    color: black;
+}
+
+/* Promoções */
+.promocoes {
+    padding: 50px 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.promocoes h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.promocoes ul {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+/* Contato */
+.contato {
+    padding: 50px 20px;
+    background-color: #333;
+    text-align: center;
+}
+
+.contato form {
+    margin-bottom: 20px;
+}
+
+.contato label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contato button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.endereco {
+    width: 600px;
+    height: 550px;
+    margin: auto;
+    padding: 100px;
+}
+
+footer {
+    background-color: #222;
+    padding: 20px;
+    margin: 50px;
+    text-align: center;
+    color: white;
+}
