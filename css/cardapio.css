@@ -10,6 +10,7 @@ header {
     padding: 20px 10px;
     height: 5%;
     width: 100%;
+    position: fixed;
 }
 header h1 {
     color: #350303;
