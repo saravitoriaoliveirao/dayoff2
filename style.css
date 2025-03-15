@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.grupo{
+    margin: 50px;
+}
+
 /* Corpo e cores principais */
 body {
     font-family: Arial, sans-serif;
@@ -144,6 +148,9 @@ nav ul li a {
 
 modo-claro section {
     background-color: whitesmoke;
+}
+.modo-claro .lista{
+    color: black;
 }
 
 /* Promoções */
