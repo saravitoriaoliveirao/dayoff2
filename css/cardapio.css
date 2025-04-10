@@ -2,21 +2,11 @@
     margin: 0;
 }
 body{
-    background-color: #656565;
+    background-image:linear-gradient(to right, #ff7300,rgb(224, 25, 25));
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
-header {
-    padding: 20px 10px;
-    height: 5%;
-    width: 100%;
-    position: fixed;
-}
-header h1 {
-    color: #350303;
-    margin: 10px 0;
-    font-size: 24px;
-}
+
 .aaa {
     flex: 1 1 50%;
     text-align: left;
@@ -27,10 +17,36 @@ header h1 {
 }
 
 .menu {
-    flex: 1 1 100%;
     text-align: center;
     justify-content: center;
-    background-color: #333;
+    background-color: #1f1e1e;
+    padding-bottom: 35px;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: +1;
+}
+
+.logo{
+    width: auto;
+    height: 70px;
+    margin-left: 40px; 
+    padding-bottom: 10px;
+}
+
+ul{
+    padding-top: 25px;
+}
+
+.lista-menu{
+    display:flex;
+    justify-content: space-between;
+    color:rgb(241, 240, 240);
+    padding-right: 160px;
+}
+
+#espetos, #paes, #porcoes, #caldos, #cervejas, #ba, #bna{
+    height: 120px;
 }
 
 .menu a {
@@ -48,8 +64,10 @@ header h1 {
 }
 
 h2{
-    color: #333;
+    color: #fff9f9;
     margin-left: 6%;
+    margin-bottom: 20px;
+    font-family: 'Oswald','Lato','Arial','Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
 }
 
 .card-container{
@@ -58,7 +76,7 @@ h2{
 }
 
 .card{
-    background-color: #D9D9D9;
+    background-color: rgba(255,255,255,0.7);
     height: 5%;
     width: 90%;
     display: flex;
@@ -115,3 +133,9 @@ section {
     height: 100vh;
     border-bottom: 1px solid #ddd;
 }
+
+@media(max-width:768px){
+    .menu a {
+        padding: 10px 15px;
+    }
+ }
