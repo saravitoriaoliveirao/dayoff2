@@ -1,13 +1,14 @@
 function toggleMenu() {
-    document.getElementById("dropdown").classList.toggle("show");
-  }
+    const dropdown = document.getElementById("dropdown");
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+}
 
-  // Fecha o menu se clicar fora
-  window.onclick = function(event) {
-    if (!event.target.matches('.menu-button')) {
-      var dropdowns = document.getElementsByClassName("menu-dropdown");
-      for (var i = 0; i < dropdowns.length; i++) {
-        dropdowns[i].classList.remove("show");
-      }
+// Fecha o menu se clicar fora
+window.addEventListener("click", function (e) {
+    const dropdown = document.getElementById("dropdown");
+    const button = document.querySelector(".menu-button");
+
+    if (!dropdown.contains(e.target) && !button.contains(e.target)) {
+        dropdown.style.display = "none";
     }
-  };
+});
