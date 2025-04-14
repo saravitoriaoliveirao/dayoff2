@@ -7,15 +7,6 @@ body{
     scroll-behavior: smooth;
 }
 
-.aaa {
-    flex: 1 1 50%;
-    text-align: left;
-}
-.insta {
-    flex: 1 1 50%;
-    text-align: right;
-}
-
 .menu {
     text-align: center;
     justify-content: center;
@@ -59,8 +50,7 @@ ul{
 }
 
 .menu a.active {
-    background-color: #555;
-    color: whitesmoke;
+    color: gray;
 }
 
 h2{
