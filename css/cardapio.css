@@ -134,8 +134,59 @@ section {
     border-bottom: 1px solid #ddd;
 }
 
+.menu-container{
+    display: none;
+}
+
 @media(max-width:768px){
     .menu a {
         padding: 10px 15px;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+  
+      .menu-container {
+        position: relative;
+        display: inline-block;
+      }
+  
+      .menu-button {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+  
+      .menu-dropdown {
+        display: none;
+        justify-content: right;
+        position: relative;
+        right: 0;
+        background-color: white;
+        min-width: 150px;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 8px;
+      }
+  
+      .menu-dropdown a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+  
+      .menu-dropdown a:hover {
+        background-color: #f1f1f1;
+      }
+
+      .menu-container{
+        display: block;
+    }
+    .space{
+        display: none;
     }
  }
