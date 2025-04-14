@@ -7,6 +7,15 @@ body{
     scroll-behavior: smooth;
 }
 
+.aaa {
+    flex: 1 1 50%;
+    text-align: left;
+}
+.insta {
+    flex: 1 1 50%;
+    text-align: right;
+}
+
 .menu {
     text-align: center;
     justify-content: center;
@@ -41,7 +50,7 @@ ul{
 }
 
 .menu a {
-    color: whitesmoke;
+    color: white;
     text-decoration: none;
     padding: 15px 20px;
     display: inline-block;
@@ -50,7 +59,8 @@ ul{
 }
 
 .menu a.active {
-    color: gray;
+    background-color: #555;
+    color: whitesmoke;
 }
 
 h2{
@@ -133,6 +143,9 @@ section {
 
 
 @media(max-width:768px){
+    .menu a {
+        padding: 10px 15px;
+    }
 
     body {
         font-family: Arial, sans-serif;
