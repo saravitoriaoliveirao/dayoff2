@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/cardapio.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <script src="js/nav.js" defer></script>
+    <script src="js/overflow.js" defer></script>
 </head>
 <body>
     <div class="menu">
@@ -21,9 +22,22 @@
                 <a href="#ba" class="menu-link">Bebidas alcólicas</a>
                 <a href="#bna" class="menu-link">Bebidas não alcoólicas</a>
             </ul>
+
+            <div class="menu-container">
+                <button class="menu-button" onclick="toggleMenu()">⋮</button>
+                <div class="menu-dropdown" id="dropdown">
+                  <a href="#espetos" class="menu-link">Espetos</a>
+                  <a href="#paes" class="menu-link">Pães de Alho</a>
+                  <a href="#porcoes" class="menu-link">Porções</a>
+                  <a href="#caldos" class="menu-link">Caldos</a>
+                  <a href="#cervejas" class="menu-link">Cervejas</a>
+                  <a href="#ba" class="menu-link">Bebidas alcólicas</a>
+                  <a href="#bna" class="menu-link">Bebidas não alcoólicas</a>
+                </div>
+            </div>
+        
         </div>
     </div>
-
     <!--Espetos-->
     <p id="espetos"></p>
     <h2>Espetos</h2>
