@@ -133,10 +133,6 @@ section {
 
 
 @media(max-width:768px){
-    .menu a {
-        padding: 10px 15px;
-    }
-
     body {
         font-family: Arial, sans-serif;
         padding: 20px;
