@@ -141,6 +141,7 @@ section {
       .menu-container {
         position: relative;
         display: inline-block;
+        z-index: +1;
       }
   
       .menu-button {
@@ -148,6 +149,7 @@ section {
         border: none;
         font-size: 24px;
         cursor: pointer;
+        justify-content: right;
       }
   
       .menu-dropdown {
