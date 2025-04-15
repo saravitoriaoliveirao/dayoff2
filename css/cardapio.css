@@ -149,7 +149,7 @@ section {
         border: none;
         font-size: 24px;
         cursor: pointer;
-        justify-content: right;
+        justify-items: right;
       }
   
       .menu-dropdown {
