@@ -125,10 +125,10 @@ section {
 }
 
 .menu-container {
-    display: none; /* Desktop esconde */
+    display: none;
 }
 .space {
-    display: flex; /* Desktop mostra lista horizontal */
+    display: flex;
 }
 
 
