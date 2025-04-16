@@ -128,6 +128,20 @@ section {
     body {
         font-family: Arial, sans-serif;
       }
+
+      .card{
+        background-color: rgba(255,255,255,0.7);
+        height: 5%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px #000;
+        transition: transform 0.2s;
+        margin-bottom: 10px;
+    }
   
       .menu-container {
         position: absolute;
