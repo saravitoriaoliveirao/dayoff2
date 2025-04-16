@@ -30,6 +30,7 @@ ul{
 }
 
 .lista-menu{
+    position: relative;
     display:flex;
     justify-content: space-between;
     color:rgb(241, 240, 240);
@@ -77,8 +78,6 @@ h2{
     box-shadow: 0 4px 6px #000;
     transition: transform 0.2s;
     margin-bottom: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 .card:hover {
@@ -128,38 +127,37 @@ section {
 @media(max-width:768px){
     body {
         font-family: Arial, sans-serif;
-        padding: 20px;
       }
   
       .menu-container {
-        position: relative;
-        display: inline-block;
-        justify-self: end;
-        z-index: +1;
-      }
-      .menu {
-        width: 100%;
-      }
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        display: block;
+    }
+    
   
       .menu-button {
-        background: none;
+        background-color: #1f1e1e;
+        color: whitesmoke;
+        position:  relative right;
         border: none;
         font-size: 24px;
         cursor: pointer;
-        justify-items: end;
       }
   
       .menu-dropdown {
         display: none;
-        justify-content: right;
-        position: relative;
+        position: absolute;
         right: 0;
+        top: 35px; /* deixa um espacinho abaixo do botão */
         background-color: white;
         min-width: 150px;
         box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-        z-index: 1;
+        z-index: 2;
         border-radius: 8px;
-      }
+        text-align: left;
+    }    
   
       .menu-dropdown a {
         color: black;
