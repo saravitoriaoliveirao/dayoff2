@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 
-.grupo {
-    margin: 50px;
+html {
+    overflow-x: hidden;
 }
 
 /* Corpo e cores principais */
@@ -14,6 +14,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #111;
     color: white;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -183,9 +186,9 @@ nav ul li {
 
 #testemunhos {
     text-align: center;
-    background-color: #333;
+    background-color: #222;
     padding: 50px;
-    color: white;
+    color: #c81b1e;
 }
 
 .testemunhos {
@@ -193,10 +196,11 @@ nav ul li {
     justify-content: space-around;
     gap: 30px;
     flex-wrap: wrap;
+    color: white;
 }
 
 .testemunho {
-    background-color: #444;
+    background-color: #333;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
@@ -205,46 +209,6 @@ nav ul li {
 
 .testemunho p {
     font-style: italic;
-}
-
-
-#parallax-section {
-    position: relative;
-    height: 500px;
-
-    background-image: url(####);
-
-    background-attachment: fixed;
-
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-
-.parallax-content {
-    z-index: 1;
-}
-
-#parallax-section h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-#parallax-section p {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-#parallax-section .cta-btn {
-    padding: 10px 20px;
-    background-color: #c81b1e;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
 }
 
 nav ul li a {
@@ -583,24 +547,57 @@ h3 {
     border-radius: 15%;
     justify-self: right;
     margin-top: 70px;
+    display: block;
 }
 
-@media(max-width: 900px) {
-    .direitos1 {
-        display: block;
-        margin-left: -120px;
-        margin-right: none;
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-
-    .itens-rodape {
-        margin-left: -50px;
+  
+    nav ul {
+      flex-direction: column;
     }
-
-    .elementosRS1 {
-        margin-left: -1px;
+  
+    .hero-text h1 {
+      font-size: 28px;
     }
-
-    .direitos {
+  
+    .hero-text p {
+      font-size: 18px;
+    }
+  
+    .testemunhos {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .testemunho {
+      width: 70%;
+    }
+  
+    .cardapio .item {
+      width: 90%;
+    }
+  
+    .historia {
+      flex-direction: column;
+      padding: 20px;
+      gap: 30px;
+    }
+  
+    .elementosE {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    iframe {
+      margin-left: 0;
+      width: 90%;
+    }
+    .instagram{
         display: none;
     }
-}
+  }  
