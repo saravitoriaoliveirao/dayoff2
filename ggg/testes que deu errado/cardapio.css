@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(135deg, #ff7300, #c81b1e);
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.menu {
+    text-align: center;
+    justify-content: center;
+    background-color: #1f1e1e;
+    padding-bottom: 35px;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: +1;
+}
+
+.logo {
+    width: auto;
+    height: 70px;
+    margin-left: 40px;
+    padding-bottom: 10px;
+}
+
+ul {
+    padding-top: 25px;
+}
+
+.lista-menu {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(241, 240, 240);
+    padding-right: 160px;
+}
+
+
+
+.icons {
+    width: 5500px;
+}
+
+#espetos,
+#paes,
+#porcoes,
+#caldos,
+#cervejas,
+#ba,
+#bna {
+    height: 120px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a.active {
+    color: gray;
+}
+
+h2 {
+    color: #fff9f9;
+    margin-left: 6%;
+    margin-bottom: 20px;
+    font-family: 'Oswald', 'Lato', 'Arial', 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 5%;
+    width: 96%;
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px #000;
+    transition: transform 0.2s;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.card-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin: 0 0 8px;
+    color: #333;
+}
+
+.card-description {
+    font-size: 1rem;
+}
+
+section {
+    scroll-margin-top: 50px;
+    padding: 100px 20px;
+    height: 100vh;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-container {
+    display: none;
+}
+
+.space {
+    display: flex;
+}
+
+
+@media(max-width:768px) {
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.7);
+        height: 5%;
+        width: 92%;
+        margin-left: 4%;
+        margin-right: 4%;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px #000;
+        transition: transform 0.2s;
+        margin-bottom: 10px;
+    }
+
+    .menu-container {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        display: block;
+    }
+
+
+    .menu-button {
+        background-color: #1f1e1e;
+        color: whitesmoke;
+        position: relative right;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .menu-dropdown {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 35px;
+        /* deixa um espacinho abaixo do botão */
+        background-color: white;
+        min-width: 150px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .menu-dropdown a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .menu-dropdown a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .menu-container {
+        display: block;
+    }
+
+    .space {
+        display: none;
+    }
+}
