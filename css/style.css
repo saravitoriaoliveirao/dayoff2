@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-.grupo{
+.grupo {
     margin: 50px;
 }
 
@@ -25,6 +25,130 @@ header {
     color: white;
 }
 
+/* Modo Escuro */
+.modo-escuro {
+    background-color: #111;
+    /* Fundo escuro */
+    color: white;
+    /* Texto branco */
+}
+
+/* Modo Claro */
+.modo-claro {
+    background-color: #ffffff;
+    /* Fundo branco */
+    color: black;
+    /* Texto preto */
+}
+
+/* Cabeçalho */
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modo-escuro header {
+    background-color: #222;
+}
+
+.modo-claro header {
+    background-color: #f1f1f1;
+    /* Claro no cabeçalho */
+}
+
+/* Botões */
+.cta-btn {
+    background-color: #c81b1e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Seção Hero */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    color: #c81b1e;
+}
+
+.hero-text p {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+/* Promoções */
+.promocoes {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.modo-escuro .promocoes {
+    background-color: #222;
+}
+
+.modo-claro .promocoes {
+    background-color: #f1f1f1;
+}
+
+/* Rodapé */
+footer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+}
+
+.modo-escuro footer {
+    background-color: #222;
+}
+
+.modo-claro footer {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+/* Estilos do rodapé */
+#rodape {
+    width: 100%;
+    height: 100px;
+    background-color: #222;
+    color: rgb(241, 240, 240);
+    margin: none;
+}
+
+/* Flexbox para o rodapé */
+.lista-rodape {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    grid-gap: 70px;
+    align-items: center;
+    padding-top: 50px;
+    margin-right: none;
+}
+
+/* Modo Claro - Alterações específicas */
+.modo-claro h1,
+.modo-claro p,
+.modo-claro a {
+    color: black;
+    /* Garantir que textos sejam pretos no modo claro */
+}
+
+.modo-claro .cta-btn {
+    background-color: #ff7300;
+    /* Botão em modo claro */
+}
+
+
 /* Cabeçalho */
 header {
     background-color: #222;
@@ -34,7 +158,7 @@ header {
     align-items: center;
 }
 
-.menu:hover{
+.menu:hover {
     color: red;
 }
 
@@ -55,6 +179,72 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+}
+
+#testemunhos {
+    text-align: center;
+    background-color: #333;
+    padding: 50px;
+    color: white;
+}
+
+.testemunhos {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testemunho {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testemunho p {
+    font-style: italic;
+}
+
+
+#parallax-section {
+    position: relative;
+    height: 500px;
+
+    background-image: url(####);
+
+    background-attachment: fixed;
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.parallax-content {
+    z-index: 1;
+}
+
+#parallax-section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#parallax-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#parallax-section .cta-btn {
+    padding: 10px 20px;
+    background-color: #c81b1e;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 nav ul li a {
@@ -171,24 +361,26 @@ nav ul li a {
     cursor: pointer;
 }
 
-.historia{
+.historia {
     display: flex;
     justify-content: space-around;
     gap: 60px;
     padding-left: 100px;
     padding-right: 100px;
 }
-.quem-somos, .nossa-historia{
+
+.quem-somos,
+.nossa-historia {
     color: whitesmoke;
     text-align: center;
     background-color: #222;
     border-radius: 15px;
     padding: 20px;
-    font-family: 'Oswald','Lato','Arial','Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+    font-family: 'Oswald', 'Lato', 'Arial', 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
 }
 
 
-.slider{
+.slider {
     margin: 0 auto;
     max-width: 100%;
     width: 720px;
@@ -196,66 +388,66 @@ nav ul li a {
     overflow: hidden;
 }
 
-.slides{
+.slides {
     width: 400%;
     height: 350px;
     display: flex;
 }
 
-.slides input{
+.slides input {
     display: none;
 }
 
-.slide{
+.slide {
     width: 25%;
     position: relative;
     overflow-y: hidden;
     transition: 2s;
 }
 
-.slide img{
+.slide img {
     width: 700px;
     height: auto;
 }
 
-.manual-navigation{
-    position:absolute;
+.manual-navigation {
+    position: absolute;
     width: 700px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
 }
 
-.manual-btn{
-    border:2px solid #FFF;
+.manual-btn {
+    border: 2px solid #FFF;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
-    
+
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
     margin-right: 40px;
 }
 
-.manual-btn:hover{
+.manual-btn:hover {
     background-color: #FFF;
 }
 
-#radio1:checked ~ .first{
+#radio1:checked~.first {
     margin-left: 0;
 }
 
-#radio2:checked ~ .first{
+#radio2:checked~.first {
     margin-left: -25%;
 }
 
-#radio3:checked ~ .first{
+#radio3:checked~.first {
     margin-left: -50%;
 }
 
-.navigation-auto div{
+.navigation-auto div {
     border: 2px solid #20a6ff;
     padding: 5px;
     border-radius: 10px;
@@ -263,7 +455,7 @@ nav ul li a {
     transition: 1s;
 }
 
-.navigation-auto{
+.navigation-auto {
     position: absolute;
     width: 700px;
     margin-top: 310px;
@@ -271,30 +463,30 @@ nav ul li a {
     justify-content: center;
 }
 
-.navigation-auto div:not(:last-child){
+.navigation-auto div:not(:last-child) {
     margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
+#radio1:checked~.navigation-auto .auto-btn1 {
     background-color: #fff;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2{
+#radio2:checked~.navigation-auto .auto-btn2 {
     background-color: #fff;
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3{
+#radio3:checked~.navigation-auto .auto-btn3 {
     background-color: #fff;
 }
 
-#endereco{
+#endereco {
     width: auto;
     height: auto;
     min-width: 270px;
-    background-color:#333;
+    background-color: #333;
 }
 
-.titulo_endereco{
+.titulo_endereco {
     color: white;
     margin-bottom: 15px;
     margin-top: 15px;
@@ -302,22 +494,23 @@ nav ul li a {
     width: 200px;
 }
 
-.elementosE{
+.elementosE {
     display: flex;
     align-items: right;
 }
-iframe{
+
+iframe {
     border: solid whitesmoke;
     margin-left: 50px;
     margin-bottom: 30px;
 }
 
 
-.localizacao{
+.localizacao {
     margin-top: 15px;
     margin-left: 30px;
     color: white;
-    width:300px;
+    width: 300px;
     height: 130px;
     text-align: left;
     font-size: 15px;
@@ -326,22 +519,22 @@ iframe{
 
 
 footer {
-    width:100%;
+    width: 100%;
     height: auto;
     text-align: center;
     color: white;
 }
 
-#rodape{
+#rodape {
     width: 100%;
-    height:100px;
+    height: 100px;
     background-color: #222;
-    color:rgb(241, 240, 240);
+    color: rgb(241, 240, 240);
     margin: none;
-    font-family:  Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.lista-rodape{
+.lista-rodape {
     display: flex;
     display: grid;
     grid-template-columns: repeat(auto-fit, 360px);
@@ -351,38 +544,39 @@ footer {
     margin-right: none;
 }
 
-.horarios{
+.horarios {
     margin-top: 15px;
     font-size: 20px;
 }
-h3{
+
+h3 {
     margin-top: 50px;
     font-size: 15px;
 }
 
-.direitos{
+.direitos {
     font-size: small;
     text-align: center;
     background-color: #222;
 }
 
-.elementos-rodape{
+.elementos-rodape {
     display: flex;
     justify-content: space-around;
     margin: none;
     background-color: #222;
 }
 
-.redesS1{
+.redesS1 {
     font-size: 20px;
     margin-top: 15px;
 }
 
-.instagram:hover{
+.instagram:hover {
     transform: scale(1.1);
 }
 
-.instagram{
+.instagram {
     width: 55px;
     height: 55px;
     transition: 0.5s;
@@ -391,22 +585,22 @@ h3{
     margin-top: 70px;
 }
 
-@media(max-width: 900px){
-    .direitos1{
+@media(max-width: 900px) {
+    .direitos1 {
         display: block;
-        margin-left: -120px ;
+        margin-left: -120px;
         margin-right: none;
     }
 
-    .itens-rodape{
+    .itens-rodape {
         margin-left: -50px;
     }
 
-    .elementosRS1{
+    .elementosRS1 {
         margin-left: -1px;
     }
 
-    .direitos{
+    .direitos {
         display: none;
     }
 }
