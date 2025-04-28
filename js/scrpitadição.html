@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Atributos AOS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 200px;
+            margin-top: 10px;
+        }
+
+        button {
+            margin: 15px 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Adicionar Atributos AOS nas &lt;div&gt;s</h1>
+
+    <label for="inputHTML">Cole seu HTML aqui:</label>
+    <textarea id="inputHTML"></textarea>
+
+    <button onclick="adicionarAtributos()">Adicionar Atributos</button>
+
+    <label for="outputHTML">Resultado:</label>
+    <textarea id="outputHTML" readonly></textarea>
+
+    <script>
+        function adicionarAtributos() {
+            let html = document.getElementById('inputHTML').value;
+            let novoHTML = html.replace(/<div(\s[^>]*?)?>/g, function (match) {
+                if (match.includes('data-aos')) return match; // Se já tiver data-aos, não adiciona
+                return match.replace('>', ' data-aos="fade-up" data-aos-duration="1000">');
+            });
+            document.getElementById('outputHTML').value = novoHTML;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espetaria Day Off</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 
-<body>
-    <header>
+<body data-aos="fade-up" data-aos-duration="1000">
+
+    <header data-aos="fade-up" data-aos-duration="1000">
         <div class="logo">
             <img src="img/logo.png">
         </div>
@@ -17,123 +20,159 @@
             <ul id="lista">
                 <li><a href="#home" class="menu">Home</a></li>
                 <li><a href="cardapio.html" class="menu">Cardápio</a></li>
-                <li><a href="https://wa.me/5531996101528?text=Olá%2C+gostaria+de+fazer+um+pedido!" target="_blank" class="menu">Contato</a></li>
+                <li><a href="https://wa.me/5531996101528?text=Olá%2C+gostaria+de+fazer+um+pedido!" target="_blank"
+                        class="menu">Contato</a></li>
+                <li><a id="troca-tema" href="" class="Modos">Modo Escuro/Claro</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="home" class="hero">
-        <div class="hero-text">
+        <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
             <h1>Bem-vindo à Espetaria Day Off!</h1>
             <p>Amigos, Cerveja, Churrasco e Muita Diversão!</p>
             <a href="#cardapio" class="cta-btn">Veja os mais pedidos do DayOff!</a>
         </div>
-    </section><br><br><br>
+    </section>
 
-        <div class="historia">
-            <div class="quem-somos">
-            <h2>Quem Somos</h2><br>
-                <p>Na Espetaria Day Off, acreditamos que bons momentos começam com boa companhia e um churrasco de qualidade.
-                Somos uma casa familiar, pensada para receber amigos, famílias e todos que apreciam um ambiente tranquilo, música boa e ótimos sabores.
-                Aqui, você encontra o verdadeiro espírito do descanso e da diversão — sem pressa, sem confusão, apenas boas experiências.
-                </p></div>
-            <div class="nossa-historia">
-            <h2>Nossa História</h2><br>
-                <p>A Day Off nasceu em dezembro de 2023, de um sonho em família: criar um espaço acolhedor onde pessoas pudessem se reunir para celebrar a vida.
-                Nossa paixão pelo churrasco e pela boa música nos inspira todos os dias.
-                Com um ambiente descontraído, trilha sonora de clássicos do rock nacional e internacional dos anos 80 e 90, e apresentações de música ao vivo em alguns sábados, oferecemos mais do que uma refeição: entregamos momentos para guardar na memória.
-                </p></div>
+
+    <div style="width: 100%; height: 2px; background: linear-gradient(to right, #ff0000, #ff0000); margin: 40px 0;">
+    </div>
+
+    <section id="parallax-section">
+        <div class="parallax-content">
+            <h2>Explore o Melhor do Churrasco!</h2>
+            <p>Delicie-se com nossos espetos preparados com muito carinho e sabor.</p>
+            <a href="cardapio.html" class="cta-btn">Veja o Cardápio</a>
         </div>
-    
-    <br><br><br><br><br><br><br><br><br><br>
+    </section>
+
+    <div class="historia" data-aos="fade-up" data-aos-duration="1000">
+        <div class="quem-somos" data-aos="fade-up" data-aos-duration="1000">
+            <h2>Quem Somos</h2><br>
+            <p>Na Espetaria Day Off, acreditamos que bons momentos começam com boa companhia e um churrasco de
+                qualidade. Somos uma casa familiar, pensada para receber amigos, famílias e todos que apreciam um
+                ambiente
+                tranquilo, música boa e ótimos sabores. Aqui, você encontra o verdadeiro espírito do descanso e da
+                diversão —
+                sem pressa, sem confusão, apenas boas experiências.</p>
+        </div>
+
+        <div class="nossa-historia" data-aos="fade-up" data-aos-duration="1000">
+            <h2>Nossa História</h2><br>
+            <p>A Day Off nasceu em dezembro de 2023, de um sonho em família: criar um espaço acolhedor onde pessoas
+                pudessem se reunir para celebrar a vida. Nossa paixão pelo churrasco e pela boa música nos inspira todos
+                os dias.
+                Com um ambiente descontraído, trilha sonora de clássicos do rock nacional e internacional dos anos 80 e
+                90, e apresentações de música ao vivo em alguns sábados, oferecemos mais do que uma refeição: entregamos
+                momentos para guardar na memória.</p>
+        </div>
+    </div>
+
+    <section id="testemunhos">
+        <h2>O que nossos clientes dizem:</h2>
+        <div class="testemunhos">
+            <div class="testemunho">
+                <p>"Ambiente incrível e o melhor churrasco da cidade! Voltarei sempre!" - João S.</p>
+            </div>
+            <div class="testemunho">
+                <p>"Adorei o atendimento, e a cerveja gelada complementa o prato perfeito!" - Maria C.</p>
+            </div>
+            <div class="testemunho">
+                <p>"Melhor lugar para reunir os amigos. A comida e a música são excepcionais!" - Pedro R.</p>
+            </div>
+        </div>
+    </section>
+    <div style="width: 100%; height: 2px; background: linear-gradient(to right, #ff0000, #ff0000); margin: 40px 0;">
+    </div>
 
     <section id="cardapio" class="cardapio">
-        <div class="slider"> 
+        <div class="slider">
             <div class="slides">
-                <!--Bolinhas (Radio Buttons)-->
                 <input type="radio" name="radio-btn" id="radio1">
                 <input type="radio" name="radio-btn" id="radio2">
                 <input type="radio" name="radio-btn" id="radio3">
-    
-                <!-- Slide images-->
-                 <div class="slide first">
+
+                <div class="slide first">
                     <img src="img/espetoo.jpg" alt="Imagem 1">
-                 </div>
-                 <div class="slide">
+                </div>
+                <div class="slide">
                     <img src="img/paoAlho.jpg" alt="Imagem 2">
-                 </div>
-                 <div class="slide">
+                </div>
+                <div class="slide">
                     <img src="img/carne.webp" alt="Imagem 3">
-                 </div>
-                
-                <!-- Navigation auto (Bolinhas de navegação)-->
-                 <div class="navigation-auto">
+                </div>
+
+                <div class="navigation-auto">
                     <div class="auto-btn1"></div>
                     <div class="auto-btn2"></div>
                     <div class="auto-btn3"></div>
-                 </div>
+                </div>
             </div>
-    
+
             <div class="manual-navigation">
                 <label for="radio1" class="manual-btn"></label>
                 <label for="radio2" class="manual-btn"></label>
                 <label for="radio3" class="manual-btn"></label>
             </div>
-    
         </div>
+
         <script>
             let count = 1;
-        document.getElementById("radio1").checked = true;
-    
-        setInterval(function () {
-            nextImage();
-        }, 5000)
-    
-        function nextImage() {
-            count ++;
-            if(count>3){
-                count = 1;
-            }
-        
-            document.getElementById("radio" + count).checked = true;
+            document.getElementById("radio1").checked = true;
+
+            setInterval(function () {
+                nextImage();
+            }, 5000)
+
+            function nextImage() {
+                count++;
+                if (count > 3) {
+                    count = 1;
+                }
+
+                document.getElementById("radio" + count).checked = true;
             }
         </script>
-    </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
 
-<footer>
-    <div id="rodape">
-        <div class="elementos-rodape">
-    
-            <div class="itens-rodape">
+    <footer>
+        <div id="rodape">
+            <div class="elementos-rodape">
+                <div class="itens-rodape">
                     <h2 class="titulo_endereco">Endereço</h2>
-                <div class="elementosE">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.816717431186!2d-44.0363664259938!3d-19.932126938372384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6950076c401b7%3A0x9c6eca77679a89e8!2sDayoff%20Espeteria!5e0!3m2!1spt-PT!2sbr!4v1741722156988!5m2!1spt-PT!2sbr"
-                        width="150" height="150" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <h2 class="localizacao">R. Nossa Sra. de Fátima, 1397 - Água Branca, Contagem - MG, 32371-180</h2>
+                    <div class="elementosE">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.816717431186!2d-44.0363664259938!3d-19.932126938372384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6950076c401b7%3A0x9c6eca77679a89e8!2sDayoff%20Espeteria!5e0!3m2!1spt-PT!2sbr!4v1741722156988!5m2!1spt-PT!2sbr"
+                            width="150" height="150" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <h2 class="localizacao">R. Nossa Sra. de Fátima, 1397 - Água Branca, Contagem - MG, 32371-180
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="horarios-rodape">
+                    <h2 class="horarios">Horário de Funcionamento</h2>
+                    <h3>Quarta e Quinta: 18h às 23h<br>Sexta e Sábado: 18h às 00:00</h3>
+                </div>
+
+                <div class="itens-rodape">
+                    <div class="elementosRS1">
+                        <a href="https://www.instagram.com/dayoff_espeteria/">
+                            <img class="instagram" src="img/instagram.png" alt="instagram"></a>
+                    </div>
                 </div>
             </div>
 
-            <div class="horarios-rodape">
-                    <h2 class="horarios">Horário de Funcionamento</h2>
-                    <h3>Quarta e Quinta: 18h ás 23h<br>Sexta e Sábado: 18h ás 00:00</h3>
-            </div>
-
-            <div class="itens-rodape">
-            <div class="elementosRS1">
-                <a href="https://www.instagram.com/dayoff_espeteria/">
-                <img class="instagram" src="img/instagram.png" alt="instagram"></a>
+            <div class="direitos-container">
+                <h5 class="direitos">© 2025 DayOff. Direitos reservados.</h5>
             </div>
         </div>
+    </footer>
 
-        </div>
-        <div class="direitos-container">
-            <h5 class="direitos">© 2025 DayOff. Direitos reservados.</h5>
-        </div>
-    </div>
-</footer>
-    
+    <script>
+        AOS.init();
+    </script>
     <script src="js/script.js"></script>
 </body>
 
