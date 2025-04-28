@@ -15,6 +15,7 @@ body {
     background-color: #111;
     color: white;
     overflow-x: hidden;
+    overflow-y: hidden;
     margin: 0;
     padding: 0;
 }
@@ -343,6 +344,11 @@ nav ul li a {
     font-family: 'Oswald', 'Lato', 'Arial', 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
 }
 
+.cantores{
+    background-image: linear-gradient(135deg, #ff7300, #c81b1e);
+    display: flex;
+}
+
 
 .slider {
     margin: 0 auto;
@@ -491,7 +497,7 @@ footer {
 
 #rodape {
     width: 100%;
-    height: 100px;
+    height: 275px;
     background-color: #222;
     color: rgb(241, 240, 240);
     margin: none;
